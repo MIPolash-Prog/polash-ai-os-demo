@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="bn" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Polash AI OS — a fast, accessible, offline-ready personal operating system for building, learning, earning and growing." />
+  <meta name="theme-color" content="#0b1020" />
+  <meta property="og:title" content="Polash AI OS — Build • Learn • Earn • Grow" />
+  <meta property="og:description" content="A curated AI toolkit, practical insights and a clean workspace in one lightweight site." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b1020'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Arial' font-size='38' font-weight='bold' fill='%23f6c453'%3EP%3C/text%3E%3C/svg%3E" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Polash AI OS — Build • Learn • Earn • Grow</title>
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="aurora" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="logo">
+        <span class="logo-mark">P</span>
+        <span class="logo-text">Polash <b>AI OS</b></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" data-en="Home" data-bn="হোম">হোম</a></li>
+        <li><a href="#tools" data-en="AI Tools" data-bn="AI টুলস">AI টুলস</a></li>
+        <li><a href="#insights" data-en="Insights" data-bn="ইনসাইটস">ইনসাইটস</a></li>
+        <li><a href="#about" data-en="About" data-bn="পরিচিতি">পরিচিতি</a></li>
+        <li><a href="#contact" data-en="Contact" data-bn="যোগাযোগ">যোগাযোগ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" id="langBtn" type="button" aria-label="Switch language" title="Switch language">EN</button>
+        <button class="icon-btn" id="themeBtn" type="button" aria-label="Toggle theme" title="Toggle theme">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+        </button>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <span class="eyebrow" data-en="PERSONAL OPERATING SYSTEM • V1.0" data-bn="পার্সোনাল অপারেটিং সিস্টেম • ভি১.০">পার্সোনাল অপারেটিং সিস্টেম • ভি১.০</span>
+        <h1>
+          <span data-en="Build something" data-bn="তৈরি করুন কিছু">তৈরি করুন কিছু</span>
+          <span class="grad" data-en="extraordinary." data-bn="অসাধারণ।">অসাধারণ।</span>
+        </h1>
+        <p data-en="A curated AI toolkit, practical insights and a calm workspace — everything you need to build, learn, earn and grow, in one lightweight page." data-bn="একটি কিউরেটেড AI টুলকিট, ব্যবহারিক ইনসাইটস ও পরিচ্ছন্ন ওয়ার্কস্পেস — তৈরি, শিখুন, উপার্জন ও বৃদ্ধির জন্য সব কিছু একটাই হালকা পেজে।">একটি কিউরেটেড AI টুলকিট, ব্যবহারিক ইনসাইটস ও পরিচ্ছন্ন ওয়ার্কস্পেস — তৈরি, শিখুন, উপার্জন ও বৃদ্ধির জন্য সব কিছু একটাই হালকা পেজে।</p>
+        <div class="hero-actions">
+          <a href="#tools" class="btn btn-primary"><span data-en="Explore AI tools" data-bn="AI টুলস দেখুন">AI টুলস দেখুন</span></a>
+          <a href="#insights" class="btn btn-ghost"><span data-en="Read insights" data-bn="ইনসাইটস পড়ুন">ইনসাইটস পড়ুন</span></a>
+        </div>
+        <div class="stats" aria-label="Highlights">
+          <div><b>500+</b><span data-en="AI tools" data-bn="AI টুল">AI টুল</span></div>
+          <div><b>13</b><span data-en="Channels" data-bn="চ্যানেল">চ্যানেল</span></div>
+          <div><b>7+</b><span data-en="Years experience" data-bn="বছরের অভিজ্ঞতা">বছরের অভিজ্ঞতা</span></div>
+          <div><b>50+</b><span data-en="Clients served" data-bn="ক্লায়েন্ট">ক্লায়েন্ট</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker" data-en="TOOLKIT" data-bn="টুলকিট">টুলকিট</span>
+            <h2 data-en="Pick the right tool, faster." data-bn="সঠিক টুলটি দ্রুত বেছে নিন।">সঠিক টুলটি দ্রুত বেছে নিন।</h2>
+          </div>
+          <p data-en="Search by name or tag, filter by category, and open any tool in a new tab." data-bn="নাম বা ট্যাগ দিয়ে খুঁজুন, ক্যাটাগরি দিয়ে ফিল্টার করুন এবং যেকোনো টুল নতুন ট্যাবে খুলুন।">নাম বা ট্যাগ দিয়ে খুঁজুন, ক্যাটাগরি দিয়ে ফিল্টার করুন এবং যেকোনো টুল নতুন ট্যাবে খুলুন।</p>
+        </div>
+        <div class="toolbar reveal">
+          <label class="search-box">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input id="toolSearch" type="search" data-en-placeholder="Search tools, tags, categories…" data-bn-placeholder="টুল, ট্যাগ, ক্যাটাগরি খুঁজুন…" placeholder="টুল, ট্যাগ, ক্যাটাগরি খুঁজুন…" autocomplete="off" />
+            <kbd>/</kbd>
+          </label>
+          <div class="chips" id="categoryChips"></div>
+        </div>
+        <div class="grid tool-grid" id="toolGrid"></div>
+        <p class="empty" id="toolEmpty" hidden data-en="No tools match that search." data-bn="এই অনুসন্ধানে কোনো টুল পাওয়া যায়নি।">এই অনুসন্ধানে কোনো টুল পাওয়া যায়নি।</p>
+      </div>
+    </section>
+
+    <section id="insights" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker" data-en="INSIGHTS" data-bn="ইনসাইটস">ইনসাইটস</span>
+            <h2 data-en="Notes from the workbench." data-bn="কাজের টেবিল থেকে নোট।">কাজের টেবিল থেকে নোট।</h2>
+          </div>
+          <p data-en="Short, practical playbooks on AI, SEO, freelancing and video systems." data-bn="AI, SEO, ফ্রিল্যান্সিং ও ভিডিও সিস্টেম নিয়ে সংক্ষিপ্ত ও ব্যবহারিক প্লেবুক।">AI, SEO, ফ্রিল্যান্সিং ও ভিডিও সিস্টেম নিয়ে সংক্ষিপ্ত ও ব্যবহারিক প্লেবুক।</p>
+        </div>
+        <div class="grid article-grid" id="articleGrid"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about-inner">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker" data-en="HOW IT WORKS" data-bn="কীভাবে কাজ করে">কীভাবে কাজ করে</span>
+            <h2 data-en="A simple system, repeated well." data-bn="একটি সহজ সিস্টেম, ভালোভাবে পুনরাবৃত্ত।">একটি সহজ সিস্টেম, ভালোভাবে পুনরাবৃত্ত।</h2>
+          </div>
+        </div>
+        <ol class="timeline" id="timeline"></ol>
+        <div class="callout reveal">
+          <span data-en="Built with plain HTML, CSS and JavaScript. No build step, no dependencies, no tracking." data-bn="সাধারণ HTML, CSS ও JavaScript দিয়ে তৈরি। কোনো বিল্ড স্টেপ, নির্ভরতা বা ট্র্যাকিং নেই।">সাধারণ HTML, CSS ও JavaScript দিয়ে তৈরি। কোনো বিল্ড স্টেপ, নির্ভরতা বা ট্র্যাকিং নেই।</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container contact-wrap">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker" data-en="CONTACT" data-bn="যোগাযোগ">যোগাযোগ</span>
+            <h2 data-en="Let's build something together." data-bn="চলুন কিছু একটা তৈরি করি।">চলুন কিছু একটা তৈরি করি।</h2>
+          </div>
+          <p data-en="Tell me what you need. Your message opens in WhatsApp or your email app — nothing is stored here." data-bn="আপনার প্রয়োজনটি বলুন। বার্তাটি WhatsApp বা ইমেইল অ্যাপে খুলবে — এখানে কিছু সংরক্ষিত হয় না।">আপনার প্রয়োজনটি বলুন। বার্তাটি WhatsApp বা ইমেইল অ্যাপে খুলবে — এখানে কিছু সংরক্ষিত হয় না।</p>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <label>
+            <span data-en="Name" data-bn="নাম">নাম</span>
+            <input type="text" name="name" id="cName" data-en-placeholder="Your name" data-bn-placeholder="আপনার নাম" placeholder="আপনার নাম" required />
+          </label>
+          <label>
+            <span data-en="Email" data-bn="ইমেইল">ইমেইল</span>
+            <input type="email" name="email" id="cEmail" data-en-placeholder="you@example.com" data-bn-placeholder="you@example.com" placeholder="you@example.com" required />
+          </label>
+          <label>
+            <span data-en="What do you need?" data-bn="আপনার কী দরকার?">আপনার কী দরকার?</span>
+            <select name="need" id="cNeed">
+              <option value="SEO & digital marketing" data-en="SEO & digital marketing" data-bn="SEO ও ডিজিটাল মার্কেটিং">SEO ও ডিজিটাল মার্কেটিং</option>
+              <option value="Website development" data-en="Website development" data-bn="ওয়েবসাইট ডেভেলপমেন্ট">ওয়েবসাইট ডেভেলপমেন্ট</option>
+              <option value="YouTube & video" data-en="YouTube & video" data-bn="ইউটিউব ও ভিডিও">ইউটিউব ও ভিডিও</option>
+              <option value="Teaching & training" data-en="Teaching & training" data-bn="শিক্ষাদান ও প্রশিক্ষণ">শিক্ষাদান ও প্রশিক্ষণ</option>
+            </select>
+          </label>
+          <label class="wide">
+            <span data-en="Message" data-bn="বার্তা">বার্তা</span>
+            <textarea name="message" id="cMsg" rows="4" data-en-placeholder="Tell me a little about your project…" data-bn-placeholder="আপনার প্রোজেক্ট সম্পর্কে বলুন…" placeholder="আপনার প্রোজেক্ট সম্পর্কে বলুন…" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="button" class="btn btn-primary" id="sendWhatsApp"><span data-en="Send on WhatsApp" data-bn="WhatsApp-এ পাঠান">WhatsApp-এ পাঠান</span></button>
+            <button type="button" class="btn btn-ghost" id="sendEmail"><span data-en="Send by email" data-bn="ইমেইলে পাঠান">ইমেইলে পাঠান</span></button>
+          </div>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Polash AI OS</span>
+      <div class="footer-links">
+        <a href="https://mipolash-prog.github.io/polash-ai-os/" target="_blank" rel="noopener">Polash AI OS</a>
+        <a href="https://github.com/MIPolash-Prog" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://mipolash-prog.github.io/polash-ai-os/privacy-policy.html" target="_blank" rel="noopener">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <div class="fab" id="fab">
+    <button class="fab-main" id="fabToggle" type="button" aria-label="Quick actions" aria-expanded="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+    </button>
+    <div class="fab-menu" id="fabMenu">
+      <button type="button" id="installBtn" hidden data-en="Install app" data-bn="অ্যাপ ইনস্টল">অ্যাপ ইনস্টল</button>
+      <button type="button" id="shareBtn" data-en="Share this site" data-bn="সাইট শেয়ার">সাইট শেয়ার</button>
+      <button type="button" id="topBtn" data-en="Back to top" data-bn="উপরে যান">উপরে যান</button>
+    </div>
+  </div>
+  <div class="modal-root" id="modalRoot" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
